@@ -10,13 +10,13 @@ const answer = await inquirer.prompt([
 ]);
 //conditional statements
 if(answer.operator === "Addition"){
-    console.log(answer.firstNumber + answer.secondNumber);
-}else if ( answer.operator === "Subtraction"){
-    console.log(answer.firstNumber - answer.secondNumber);
+    console.log('Answer:',answer.firstNumber + answer.secondNumber);
+}else if (answer.operator === "Subtraction"){
+    console.log('Answer:',answer.firstNumber - answer.secondNumber);
 }else if( answer.operator === "Multiplication"){
-    console.log(answer.firstNumber * answer.secondNumber)
+    console.log('Answer:',answer.firstNumber * answer.secondNumber)
 }else if ( answer.operator === "Division"){
-    console.log(answer.firstNumber / answer.secondNumber)
+    console.log('Answer:',answer.firstNumber / answer.secondNumber)
 }else {
     console.log("Please Select the Correct operator")
 };
